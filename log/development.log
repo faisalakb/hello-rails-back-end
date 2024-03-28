@@ -1,0 +1,97 @@
+  [1m[35m (205.8ms)[0m  [1m[35mCREATE DATABASE "hello_back_end_development" ENCODING = 'unicode'[0m
+  [1m[35m (118.0ms)[0m  [1m[35mCREATE DATABASE "hello_back_end_test" ENCODING = 'unicode'[0m
+  [1m[35m (30.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (6.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1251253023131660955)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::InternalMetadata Create (1.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2024-03-28 11:58:38.666155', '2024-03-28 11:58:38.666157') RETURNING "key"[0m
+Migrating to CreateMessages (20240328115731)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (6.9ms)[0m  [1m[35mCREATE TABLE "messages" ("id" bigserial primary key, "content" text, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20240328115731') RETURNING "version"[0m
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(1251253023131660955)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMessage Create (1.7ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "Hello, world!"], ["created_at", "2024-03-28 11:59:24.433893"], ["updated_at", "2024-03-28 11:59:24.433893"]]
+  [1m[36mTRANSACTION (26.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMessage Create (5.5ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "Welcome to our API!"], ["created_at", "2024-03-28 11:59:24.467488"], ["updated_at", "2024-03-28 11:59:24.467488"]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMessage Create (4.1ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "Greetings from Rails!"], ["created_at", "2024-03-28 11:59:24.481572"], ["updated_at", "2024-03-28 11:59:24.481572"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMessage Create (2.1ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "Good day!"], ["created_at", "2024-03-28 11:59:24.494651"], ["updated_at", "2024-03-28 11:59:24.494651"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMessage Create (3.0ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "Bonjour!"], ["created_at", "2024-03-28 11:59:24.502858"], ["updated_at", "2024-03-28 11:59:24.502858"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMessage Create (2.3ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "Hello, world!"], ["created_at", "2024-03-28 12:14:26.055999"], ["updated_at", "2024-03-28 12:14:26.055999"]]
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMessage Create (3.7ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "Welcome to our API!"], ["created_at", "2024-03-28 12:14:26.065463"], ["updated_at", "2024-03-28 12:14:26.065463"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMessage Create (2.0ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "Greetings from Rails!"], ["created_at", "2024-03-28 12:14:26.075348"], ["updated_at", "2024-03-28 12:14:26.075348"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMessage Create (1.8ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "Good day!"], ["created_at", "2024-03-28 12:14:26.081284"], ["updated_at", "2024-03-28 12:14:26.081284"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMessage Create (1.3ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "Bonjour!"], ["created_at", "2024-03-28 12:14:26.086468"], ["updated_at", "2024-03-28 12:14:26.086468"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for 127.0.0.1 at 2024-03-28 17:15:53 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/faisal/.rvm/gems/ruby-3.0.0/gems/railties-7.1.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/faisal/.rvm/gems/ruby-3.0.0/gems/railties-7.1.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.4ms | Allocations: 525)
+Completed 200 OK in 25ms (Views: 7.6ms | ActiveRecord: 0.0ms | Allocations: 9141)
+
+
+Started GET "/api/random_greeting" for 127.0.0.1 at 2024-03-28 17:20:19 +0500
+Processing by Api::MessagesController#random_greeting as HTML
+  [1m[36mMessage Load (1.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/messages_controller.rb:6:in `random_greeting'
+Completed 200 OK in 94ms (Views: 0.3ms | ActiveRecord: 14.2ms | Allocations: 77193)
+
+
+Started GET "/api/random_greeting" for 127.0.0.1 at 2024-03-28 17:20:21 +0500
+Processing by Api::MessagesController#random_greeting as HTML
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/messages_controller.rb:6:in `random_greeting'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.7ms | Allocations: 648)
+
+
+Started GET "/api/random_greeting" for 127.0.0.1 at 2024-03-28 17:20:22 +0500
+Processing by Api::MessagesController#random_greeting as HTML
+  [1m[36mMessage Load (1.8ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/messages_controller.rb:6:in `random_greeting'
+Completed 200 OK in 9ms (Views: 0.5ms | ActiveRecord: 1.7ms | Allocations: 646)
+
+
+Started GET "/api/random_greeting" for 127.0.0.1 at 2024-03-28 17:20:23 +0500
+Processing by Api::MessagesController#random_greeting as HTML
+  [1m[36mMessage Load (1.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/messages_controller.rb:6:in `random_greeting'
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 1.1ms | Allocations: 634)
+
+
+Started GET "/api/random_greeting" for 127.0.0.1 at 2024-03-28 17:20:24 +0500
+Processing by Api::MessagesController#random_greeting as HTML
+  [1m[36mMessage Load (1.8ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/messages_controller.rb:6:in `random_greeting'
+Completed 200 OK in 9ms (Views: 0.8ms | ActiveRecord: 1.7ms | Allocations: 646)
+
+
+Started GET "/api/random_greeting" for 127.0.0.1 at 2024-03-28 17:20:25 +0500
+Processing by Api::MessagesController#random_greeting as HTML
+  [1m[36mMessage Load (2.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/messages_controller.rb:6:in `random_greeting'
+Completed 200 OK in 9ms (Views: 0.5ms | ActiveRecord: 2.0ms | Allocations: 628)
+
+
