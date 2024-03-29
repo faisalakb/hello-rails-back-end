@@ -95,3 +95,377 @@ Processing by Api::MessagesController#random_greeting as HTML
 Completed 200 OK in 9ms (Views: 0.5ms | ActiveRecord: 2.0ms | Allocations: 628)
 
 
+Started GET "/" for 127.0.0.1 at 2024-03-29 22:23:35 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/faisal/.rvm/gems/ruby-3.2.2/gems/railties-7.1.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/faisal/.rvm/gems/ruby-3.2.2/gems/railties-7.1.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.1ms | Allocations: 376)
+Completed 200 OK in 31ms (Views: 10.3ms | ActiveRecord: 0.0ms | Allocations: 7744)
+
+
+Started GET "/api/random_greeting" for 127.0.0.1 at 2024-03-29 22:26:23 +0500
+Processing by Api::MessagesController#random_greeting as */*
+  [1m[36mMessage Load (2.9ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/messages_controller.rb:6:in `random_greeting'
+Completed 200 OK in 135ms (Views: 0.5ms | ActiveRecord: 28.8ms | Allocations: 20623)
+
+
+Started GET "/api/random_greeting" for 127.0.0.1 at 2024-03-29 22:27:04 +0500
+Processing by Api::MessagesController#random_greeting as HTML
+  [1m[36mMessage Load (1.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/messages_controller.rb:6:in `random_greeting'
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 1.0ms | Allocations: 543)
+
+
+Started GET "/api/random_greeting" for 127.0.0.1 at 2024-03-29 22:27:08 +0500
+Processing by Api::MessagesController#random_greeting as HTML
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/messages_controller.rb:6:in `random_greeting'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.7ms | Allocations: 542)
+
+
+Started GET "/api/random_greeting" for 127.0.0.1 at 2024-03-29 22:27:09 +0500
+Processing by Api::MessagesController#random_greeting as HTML
+  [1m[36mMessage Load (1.7ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/messages_controller.rb:6:in `random_greeting'
+Completed 200 OK in 7ms (Views: 0.3ms | ActiveRecord: 1.6ms | Allocations: 531)
+
+
+Started GET "/api/random_greeting" for 127.0.0.1 at 2024-03-29 22:39:53 +0500
+Processing by Api::MessagesController#random_greeting as */*
+  [1m[36mMessage Load (58.6ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/messages_controller.rb:6:in `random_greeting'
+Completed 200 OK in 66ms (Views: 0.5ms | ActiveRecord: 80.4ms | Allocations: 3401)
+
+
+Started GET "/api/random_greeting" for 127.0.0.1 at 2024-03-29 22:39:53 +0500
+Processing by Api::MessagesController#random_greeting as */*
+  [1m[36mMessage Load (1.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/messages_controller.rb:6:in `random_greeting'
+Completed 200 OK in 6ms (Views: 0.4ms | ActiveRecord: 1.5ms | Allocations: 528)
+
+
+Started GET "/api/random_greeting" for 127.0.0.1 at 2024-03-29 22:39:58 +0500
+Processing by Api::MessagesController#random_greeting as */*
+  [1m[36mMessage Load (0.9ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/messages_controller.rb:6:in `random_greeting'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.8ms | Allocations: 537)
+
+
+Started GET "/api/random_greeting" for 127.0.0.1 at 2024-03-29 22:39:58 +0500
+Processing by Api::MessagesController#random_greeting as */*
+  [1m[36mMessage Load (0.9ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/messages_controller.rb:6:in `random_greeting'
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.9ms | Allocations: 528)
+
+
+Started GET "/api/random_greeting" for 127.0.0.1 at 2024-03-29 22:39:59 +0500
+Processing by Api::MessagesController#random_greeting as */*
+  [1m[36mMessage Load (1.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/messages_controller.rb:6:in `random_greeting'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 1.0ms | Allocations: 529)
+
+
+Started GET "/api/random_greeting" for 127.0.0.1 at 2024-03-29 22:39:59 +0500
+Processing by Api::MessagesController#random_greeting as */*
+  [1m[36mMessage Load (1.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/messages_controller.rb:6:in `random_greeting'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.9ms | Allocations: 528)
+
+
+Started GET "/api/random_greeting" for 127.0.0.1 at 2024-03-29 22:40:38 +0500
+Processing by Api::MessagesController#random_greeting as HTML
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/messages_controller.rb:6:in `random_greeting'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.6ms | Allocations: 526)
+
+
+Started GET "/api/random_greeting" for 127.0.0.1 at 2024-03-29 22:40:42 +0500
+Processing by Api::MessagesController#random_greeting as */*
+  [1m[36mMessage Load (1.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/messages_controller.rb:6:in `random_greeting'
+Completed 200 OK in 6ms (Views: 0.4ms | ActiveRecord: 1.1ms | Allocations: 529)
+
+
+Started GET "/api/random_greeting" for 127.0.0.1 at 2024-03-29 22:40:42 +0500
+Processing by Api::MessagesController#random_greeting as */*
+  [1m[36mMessage Load (1.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/messages_controller.rb:6:in `random_greeting'
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 1.2ms | Allocations: 528)
+
+
+Started GET "/api/random_greeting" for 127.0.0.1 at 2024-03-29 22:40:44 +0500
+Processing by Api::MessagesController#random_greeting as */*
+  [1m[36mMessage Load (1.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/messages_controller.rb:6:in `random_greeting'
+Completed 200 OK in 7ms (Views: 0.4ms | ActiveRecord: 1.5ms | Allocations: 529)
+
+
+Started GET "/api/random_greeting" for 127.0.0.1 at 2024-03-29 22:40:44 +0500
+Processing by Api::MessagesController#random_greeting as */*
+  [1m[36mMessage Load (1.9ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/messages_controller.rb:6:in `random_greeting'
+Completed 200 OK in 8ms (Views: 0.4ms | ActiveRecord: 1.5ms | Allocations: 530)
+
+
+Started GET "/api/random_greeting" for 127.0.0.1 at 2024-03-29 22:44:43 +0500
+Started GET "/api/random_greeting" for 127.0.0.1 at 2024-03-29 22:44:43 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::MessagesController#random_greeting as */*
+Processing by Api::MessagesController#random_greeting as */*
+  [1m[36mMessage Load (1.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mMessage Load (2.6ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/messages_controller.rb:6:in `random_greeting'
+  ↳ app/controllers/api/messages_controller.rb:6:in `random_greeting'
+Completed 200 OK in 158ms (Views: 0.9ms | ActiveRecord: 20.3ms | Allocations: 22898)
+
+
+Completed 200 OK in 158ms (Views: 0.3ms | ActiveRecord: 38.1ms | Allocations: 22768)
+
+
+Started GET "/api/random_greeting" for 127.0.0.1 at 2024-03-29 22:44:46 +0500
+Processing by Api::MessagesController#random_greeting as */*
+  [1m[36mMessage Load (0.8ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/messages_controller.rb:6:in `random_greeting'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.8ms | Allocations: 551)
+
+
+Started GET "/api/random_greeting" for 127.0.0.1 at 2024-03-29 22:44:46 +0500
+Processing by Api::MessagesController#random_greeting as */*
+  [1m[36mMessage Load (0.8ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/messages_controller.rb:6:in `random_greeting'
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.8ms | Allocations: 534)
+
+
+Started GET "/api/random_greeting" for 127.0.0.1 at 2024-03-29 22:44:47 +0500
+Processing by Api::MessagesController#random_greeting as */*
+  [1m[36mMessage Load (0.9ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/messages_controller.rb:6:in `random_greeting'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.9ms | Allocations: 549)
+
+
+Started GET "/api/random_greeting" for 127.0.0.1 at 2024-03-29 22:44:47 +0500
+Processing by Api::MessagesController#random_greeting as */*
+  [1m[36mMessage Load (0.9ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/messages_controller.rb:6:in `random_greeting'
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.9ms | Allocations: 536)
+
+
+Started GET "/api/random_greeting" for 127.0.0.1 at 2024-03-29 22:44:49 +0500
+Processing by Api::MessagesController#random_greeting as */*
+  [1m[36mMessage Load (0.8ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/messages_controller.rb:6:in `random_greeting'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.8ms | Allocations: 548)
+
+
+Started GET "/api/random_greeting" for 127.0.0.1 at 2024-03-29 22:44:49 +0500
+Processing by Api::MessagesController#random_greeting as */*
+  [1m[36mMessage Load (0.8ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/messages_controller.rb:6:in `random_greeting'
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.8ms | Allocations: 535)
+
+
+Started GET "/api/random_greeting" for 127.0.0.1 at 2024-03-29 22:46:33 +0500
+Processing by Api::MessagesController#random_greeting as */*
+  [1m[36mMessage Load (1.6ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/messages_controller.rb:6:in `random_greeting'
+Completed 200 OK in 8ms (Views: 0.5ms | ActiveRecord: 1.6ms | Allocations: 535)
+
+
+Started GET "/api/random_greeting" for 127.0.0.1 at 2024-03-29 22:46:52 +0500
+Processing by Api::MessagesController#random_greeting as */*
+  [1m[36mMessage Load (1.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/messages_controller.rb:6:in `random_greeting'
+Completed 200 OK in 9ms (Views: 0.5ms | ActiveRecord: 1.5ms | Allocations: 534)
+
+
+Started GET "/api/random_greeting" for 127.0.0.1 at 2024-03-29 22:49:29 +0500
+Processing by Api::MessagesController#random_greeting as */*
+  [1m[36mMessage Load (1.7ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/messages_controller.rb:6:in `random_greeting'
+Completed 200 OK in 7ms (Views: 0.4ms | ActiveRecord: 1.7ms | Allocations: 534)
+
+
+Started GET "/api/random_greeting" for 127.0.0.1 at 2024-03-29 22:59:21 +0500
+Processing by Api::MessagesController#random_greeting as */*
+  [1m[36mMessage Load (24.8ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/messages_controller.rb:6:in `random_greeting'
+Completed 200 OK in 28ms (Views: 0.2ms | ActiveRecord: 34.6ms | Allocations: 3392)
+
+
+Started GET "/api/random_greeting" for 127.0.0.1 at 2024-03-29 22:59:31 +0500
+Processing by Api::MessagesController#random_greeting as */*
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/messages_controller.rb:6:in `random_greeting'
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.7ms | Allocations: 535)
+
+
+Started GET "/api/random_greeting" for 127.0.0.1 at 2024-03-29 23:00:16 +0500
+Started GET "/api/random_greeting" for 127.0.0.1 at 2024-03-29 23:00:16 +0500
+Processing by Api::MessagesController#random_greeting as */*
+  [1m[36mMessage Load (1.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/messages_controller.rb:6:in `random_greeting'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 1.1ms | Allocations: 602)
+
+
+Processing by Api::MessagesController#random_greeting as */*
+  [1m[36mMessage Load (0.9ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/messages_controller.rb:6:in `random_greeting'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.8ms | Allocations: 535)
+
+
+Started GET "/api/random_greeting" for 127.0.0.1 at 2024-03-29 23:00:23 +0500
+Started GET "/api/random_greeting" for 127.0.0.1 at 2024-03-29 23:00:23 +0500
+Processing by Api::MessagesController#random_greeting as */*
+  [1m[36mMessage Load (1.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/messages_controller.rb:6:in `random_greeting'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 1.0ms | Allocations: 587)
+
+
+Processing by Api::MessagesController#random_greeting as */*
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/messages_controller.rb:6:in `random_greeting'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.7ms | Allocations: 534)
+
+
+Started GET "/api/random_greeting" for 127.0.0.1 at 2024-03-29 23:00:24 +0500
+Started GET "/api/random_greeting" for 127.0.0.1 at 2024-03-29 23:00:24 +0500
+Processing by Api::MessagesController#random_greeting as */*
+  [1m[36mMessage Load (1.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/messages_controller.rb:6:in `random_greeting'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 1.0ms | Allocations: 613)
+
+
+Processing by Api::MessagesController#random_greeting as */*
+  [1m[36mMessage Load (0.9ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/messages_controller.rb:6:in `random_greeting'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.9ms | Allocations: 534)
+
+
+Started GET "/api/random_greeting" for 127.0.0.1 at 2024-03-29 23:00:38 +0500
+Processing by Api::MessagesController#random_greeting as */*
+  [1m[36mMessage Load (0.8ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/messages_controller.rb:6:in `random_greeting'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.8ms | Allocations: 534)
+
+
+Started GET "/api/random_greeting" for 127.0.0.1 at 2024-03-29 23:00:41 +0500
+Processing by Api::MessagesController#random_greeting as */*
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/messages_controller.rb:6:in `random_greeting'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.7ms | Allocations: 535)
+
+
+Started GET "/api/random_greeting" for 127.0.0.1 at 2024-03-29 23:00:42 +0500
+Processing by Api::MessagesController#random_greeting as */*
+  [1m[36mMessage Load (1.7ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/messages_controller.rb:6:in `random_greeting'
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 1.7ms | Allocations: 534)
+
+
+Started GET "/api/random_greeting" for 127.0.0.1 at 2024-03-29 23:00:45 +0500
+Processing by Api::MessagesController#random_greeting as */*
+  [1m[36mMessage Load (1.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/messages_controller.rb:6:in `random_greeting'
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 1.4ms | Allocations: 534)
+
+
+Started GET "/api/random_greeting" for 127.0.0.1 at 2024-03-29 23:00:52 +0500
+Processing by Api::MessagesController#random_greeting as */*
+  [1m[36mMessage Load (1.6ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/messages_controller.rb:6:in `random_greeting'
+Completed 200 OK in 6ms (Views: 0.4ms | ActiveRecord: 1.5ms | Allocations: 535)
+
+
+Started GET "/api/random_greeting" for 127.0.0.1 at 2024-03-29 23:01:02 +0500
+Processing by Api::MessagesController#random_greeting as */*
+  [1m[36mMessage Load (2.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/messages_controller.rb:6:in `random_greeting'
+Completed 200 OK in 7ms (Views: 0.4ms | ActiveRecord: 2.3ms | Allocations: 534)
+
+
+Started GET "/api/random_greeting" for 127.0.0.1 at 2024-03-29 23:01:06 +0500
+Processing by Api::MessagesController#random_greeting as */*
+  [1m[36mMessage Load (1.6ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/messages_controller.rb:6:in `random_greeting'
+Completed 200 OK in 7ms (Views: 0.5ms | ActiveRecord: 1.6ms | Allocations: 535)
+
+
+Started GET "/api/random_greeting" for 127.0.0.1 at 2024-03-29 23:01:10 +0500
+Processing by Api::MessagesController#random_greeting as */*
+  [1m[36mMessage Load (1.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/messages_controller.rb:6:in `random_greeting'
+Completed 200 OK in 6ms (Views: 0.5ms | ActiveRecord: 1.5ms | Allocations: 534)
+
+
+Started GET "/api/random_greeting" for 127.0.0.1 at 2024-03-29 23:01:23 +0500
+Processing by Api::MessagesController#random_greeting as */*
+  [1m[36mMessage Load (0.9ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/messages_controller.rb:6:in `random_greeting'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.8ms | Allocations: 536)
+
+
+Started GET "/api/random_greeting" for 127.0.0.1 at 2024-03-29 23:01:29 +0500
+Processing by Api::MessagesController#random_greeting as */*
+  [1m[36mMessage Load (1.7ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/messages_controller.rb:6:in `random_greeting'
+Completed 200 OK in 7ms (Views: 0.5ms | ActiveRecord: 1.7ms | Allocations: 536)
+
+
+Started GET "/api/random_greeting" for 127.0.0.1 at 2024-03-29 23:01:33 +0500
+Processing by Api::MessagesController#random_greeting as */*
+  [1m[36mMessage Load (0.8ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/messages_controller.rb:6:in `random_greeting'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.8ms | Allocations: 535)
+
+
+Started GET "/api/random_greeting" for 127.0.0.1 at 2024-03-29 23:01:53 +0500
+Processing by Api::MessagesController#random_greeting as */*
+  [1m[36mMessage Load (0.8ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/messages_controller.rb:6:in `random_greeting'
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.7ms | Allocations: 535)
+
+
+Started GET "/api/random_greeting" for 127.0.0.1 at 2024-03-29 23:01:53 +0500
+Processing by Api::MessagesController#random_greeting as */*
+  [1m[36mMessage Load (0.8ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/messages_controller.rb:6:in `random_greeting'
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.8ms | Allocations: 534)
+
+
+Started GET "/api/random_greeting" for 127.0.0.1 at 2024-03-29 23:01:55 +0500
+Started GET "/api/random_greeting" for 127.0.0.1 at 2024-03-29 23:01:55 +0500
+Processing by Api::MessagesController#random_greeting as */*
+  [1m[36mMessage Load (1.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/messages_controller.rb:6:in `random_greeting'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 1.0ms | Allocations: 561)
+
+
+Processing by Api::MessagesController#random_greeting as */*
+  [1m[36mMessage Load (0.8ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/messages_controller.rb:6:in `random_greeting'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.8ms | Allocations: 534)
+
+
+Started GET "/api/random_greeting" for 127.0.0.1 at 2024-03-29 23:02:14 +0500
+Processing by Api::MessagesController#random_greeting as */*
+  [1m[36mMessage Load (4.9ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/messages_controller.rb:6:in `random_greeting'
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 4.9ms | Allocations: 534)
+
+
+Started GET "/api/random_greeting" for 127.0.0.1 at 2024-03-29 23:02:21 +0500
+Processing by Api::MessagesController#random_greeting as */*
+  [1m[36mMessage Load (1.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/messages_controller.rb:6:in `random_greeting'
+Completed 200 OK in 6ms (Views: 0.4ms | ActiveRecord: 1.2ms | Allocations: 534)
+
+
+Started GET "/" for 127.0.0.1 at 2024-03-29 23:12:30 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/faisal/.rvm/gems/ruby-3.2.2/gems/railties-7.1.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/faisal/.rvm/gems/ruby-3.2.2/gems/railties-7.1.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 4.8ms | Allocations: 376)
+Completed 200 OK in 44ms (Views: 18.2ms | ActiveRecord: 0.0ms | Allocations: 4260)
+
+
